@@ -1,0 +1,262 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+*{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ font,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td {
+   border: 0;
+   font-family: inherit;
+   font-size: 100%;
+   font-style: inherit;
+   font-weight: inherit;
+   margin: 0;
+   outline: 0;
+   padding: 0;
+   vertical-align: baseline;
+   scroll-behavior: smooth;
+   list-style: none;
+ }
+ html {
+   font-size: 62.5%;
+   height: 100%;
+ }
+ body {
+   color: #2b2b2b;
+   font-family: "Poppins", sans-serif;
+   font-size: 1.6rem;
+   overflow-x: hidden;
+   line-height: 1.4;
+ }
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ article,
+ aside,
+ footer,
+ header,
+ nav,
+ section,
+ time {
+   display: block;
+ }
+ a {
+   text-decoration: none;
+ }
+ img {
+   max-width: 100%;
+ }
+
+ /* Grid */
+ .container{
+    max-width: 130rem;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0 auto;
+ }
+
+
+ /* Header */
+ .header{
+    padding: 3rem 0;
+    background: #ffffff;
+ }
+ .header .logo{
+    width: 10rem;
+ }
+ .header .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    margin: 0 auto;
+ }
+ .header .header-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+ }
+ .header .header-nav ul li a{
+    color: gray;
+    font-weight: 400;
+    font-size: 1.8rem;
+    transition: 0.5s ease;
+ }
+ .header .header-nav ul li:hover{
+    color: black;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+ }
+
+
+
+
+
+ /* Train */
+ .train{
+    padding: 5rem 0;
+    background: #ffffff;
+ }
+ .train h4{
+    font-size: 5rem;
+    font-weight: 600;
+    max-width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+ }
+ .train .train-wrapper{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10rem;
+ }
+ .train a{
+    width: 15rem;
+    font-size: 2rem;
+ }
+ 
+ /* Footer */
+ .footer{
+    padding: 5rem 0;
+    background: #ffffff;
+ }
+ .footer .footer-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 3rem;
+ }
+ .footer .footer-link ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+ .footer .footer-link h4{
+    margin-bottom: 2rem;
+    font-weight: 600;
+ }
+ .footer .footer-link i{
+   display: none;
+ }
+ .footer .footer-item{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
+ }
+
+ /* Mobile */
+ @media screen and (max-width:500px) {
+   .footer .footer-link h4{
+      margin-bottom: 2rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .footer .footer-link i{
+      display: unset;
+      transition: 0.5s ease;
+    }
+    .footer .footer-link i.open{
+      transform: rotate(180deg);
+      transition: 0.5s ease;
+    }
+    .footer .footer-wrapper{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+   }
+   .footer .footer-link ul{
+      max-height: 0rem;
+      padding: 0 2rem;
+      overflow: hidden;
+      transition: 0.5s ease;
+   }
+   .footer .footer-link ul.open{
+      max-height: 50rem;
+      overflow: hidden;
+      transition: 0.5s ease;
+   }
+ }
+
+
+ /* Repeatable Pattern */
+ .btn{
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    border-radius: 5rem;
+ }
+ .btn.btn-mint{
+    background-color: #04ddb2;
+    color: white;
+    transition: 0.5s ease;
+ }
+ .btn.btn-mint:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+ }
