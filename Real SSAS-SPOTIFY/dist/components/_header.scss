@@ -1,0 +1,141 @@
+.header{
+    background: $clr-black;
+    position: relative;
+    img{
+        width: 14rem;
+    }
+    
+    // Header Wrapper
+    &-wrapper{
+        @include centerAll;
+        height: 2.5rem;
+    }
+    // Header Navigator
+    &-nav{
+        position: absolute;
+        background: $clr-black;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        padding: 2rem;
+        left: -100rem;
+        &.open{
+            left: 4rem;
+        }
+        ul{
+            // First Navigation
+            .first-nav{
+                font-weight: 550;
+                font-size: 2.5rem;
+            }
+            .seperator{
+                display: block;
+                width: 1rem;
+                height: 2px;
+                background-color: $clr-light;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                cursor: default;
+            }
+            .last-nav{
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+            li{
+                margin-top: 1rem;
+                a{
+                    color: $clr-light;
+                    // Link Hover
+                    &:hover{
+                        color: $clr-green;
+                    }
+                }
+            }
+        }
+        // Navigator logo
+        .nav-logo{
+            position: absolute;
+            bottom: 1rem;
+            left: 0.5rem;
+            cursor: pointer;
+        }
+    }
+    // Burger Button Open
+    .first-burger.open{
+        span{
+            &:first-child{
+                transform: translate(0, 0px) rotate(225deg);
+                @include transitionEZ;
+            }
+            &:nth-child(2){
+                opacity: 0;
+                @include transitionEZ;
+            }
+            &:last-child{
+                transform: translate(0, -10px) rotate(-225deg);
+                @include transitionEZ;
+            }
+        }
+    }
+    span{
+        width: 22px;
+        height: 3px;
+        background: $clr-light;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    }
+}
+
+@include mediaQuery($break-lg){
+    .header{
+        position: relative;
+        &-wrapper{
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        &-nav{
+            position: unset;
+            height: unset;
+            width: unset;
+            left: unset;
+            background: $clr-black;
+            ul{
+                display: flex;
+                gap: 3rem;
+                margin-top: 0;
+                line-height: 1;
+                .first-nav{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                .last-nav{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                .seperator{
+                    width: 1px;
+                    height: 1.4rem;
+                    background-color: $clr-light;
+                    margin-top: unset;
+                    margin-bottom: unset;
+                    cursor: default;
+                }
+                li{
+                    margin-top: unset;
+                    a{
+                        color: $clr-light;
+                    }
+                }
+            }
+        }
+        .first-burger{
+            display: none;
+        }
+        .nav-logo{
+            display: none;
+        }
+    }
+}
