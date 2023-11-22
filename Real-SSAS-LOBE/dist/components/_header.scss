@@ -1,0 +1,39 @@
+.header{
+    position: relative;
+    background: $clr-light;
+    &-logo{
+        img{
+            width: 6rem;
+        }
+    }
+    &-wrapper{
+        @include centerAll;
+        height: 1.5rem;
+    }
+    &-nav{
+        display: none;
+        ul{
+            display: flex;
+            li{
+                a{
+                    color: $clr-font;
+                }
+            }
+        }
+    }
+    &-btn{
+        display: none;
+    }
+    &-burger{
+        background: #eef0f2;
+        padding: .7rem;
+        border-radius: 5rem;
+        span{
+            width: 20px;
+            height: 2px;
+            background: $clr-hover;
+            display: block;
+            margin-bottom: 3px;
+        }
+    }
+}
