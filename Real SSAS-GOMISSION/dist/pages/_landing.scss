@@ -1,0 +1,58 @@
+.banner{
+    background-image: url("/img/banner_home_v1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-text{
+        color: $clr-light;
+        text-align: center;
+        h1{
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 1rem;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+    }
+    &-btn{
+        flex-direction: column;
+        text-align: center;
+        .btn-choose{
+            display: block;
+            border: 1px solid #134a8c;
+            border-radius: 5rem;
+            padding: 1rem 2rem;
+            font-size: 12px;
+            font-weight: bold;
+            color: $clr-light;
+            background: $clr-button1;
+            margin-bottom: .5rem;
+        }
+        .btn-choose:hover{
+            background: #0c3e7c;
+        }
+        .btn-recommend{
+            display: block;
+            border: 1px solid $clr-button1;
+            border-radius: 5rem;
+            padding: 1rem 2rem;
+            font-size: 12px;
+            font-weight: bold;
+            color: $clr-button1;
+            background: $clr-light;
+        }
+    }
+    &-faq{
+        position: absolute;
+        .btn-faq{
+            // bottom: ;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.header{
+    background: transparent;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    &-wrapper{
+        @include centerAll;
+        height: .5rem;
+    }
+    &-nav{
+        display: none;
+        ul{
+            li{
+                a{
+                    color: $clr-light;
+                }
+            }
+        }
+    }
+    &-button{
+        cursor: pointer;
+        span{
+            width: 22px;
+            height: 2px;
+            background: $clr-light;
+            display: block;
+            margin-bottom: 4px;
+        }
+    }
+    &-logo{
+        cursor: pointer;
+        img{
+            width: 12rem;
+        }
+    }
+}

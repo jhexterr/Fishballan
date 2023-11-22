@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #2c2c32;
+  text-decoration: none;
+}
+
+htmtl {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #2c2c32;
+  font-family: Helvetica, "sans-serif";
+}
+
+.container {
+  max-width: 130rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url("/img/banner_home_v1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-text {
+  color: #ffffff;
+  text-align: center;
+}
+.banner-text h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.banner-text p {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.banner-btn {
+  flex-direction: column;
+  text-align: center;
+}
+.banner-btn .btn-choose {
+  display: block;
+  border: 1px solid #134a8c;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #134a8c;
+  margin-bottom: 0.5rem;
+}
+.banner-btn .btn-choose:hover {
+  background: #0c3e7c;
+}
+.banner-btn .btn-recommend {
+  display: block;
+  border: 1px solid #134a8c;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  font-size: 12px;
+  font-weight: bold;
+  color: #134a8c;
+  background: #ffffff;
+}
+.banner-faq {
+  position: absolute;
+}
+.header {
+  background: transparent;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0.5rem;
+}
+.header-nav {
+  display: none;
+}
+.header-nav ul li a {
+  color: #ffffff;
+}
+.header-button {
+  cursor: pointer;
+}
+.header-button span {
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin-bottom: 4px;
+}
+.header-logo {
+  cursor: pointer;
+}
+.header-logo img {
+  width: 12rem;
+}/*# sourceMappingURL=main.css.map */
